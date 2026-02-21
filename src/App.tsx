@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import DashboardLayout from "./components/layout/DashboardLayout";
 import AllSites from "./pages/AllSites";
+import ComparisonPage from "./pages/ComparisonPage";
 import HighRiskAreas from "./pages/HighRiskAreas";
 import Index from "./pages/Index";
 import LandingPage from "./pages/LandingPage";
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/mining-sites" element={<MiningSites />} />
             <Route path="/high-risk" element={<HighRiskAreas />} />
             <Route path="/notifications" element={<NotificationsPage />} />
+            <Route path="/comparison" element={<ComparisonPage />} />
           </Route>
           <Route path="/map" element={<MapView />} />
           <Route path="/3d-model" element={<ThreeDModel />} />

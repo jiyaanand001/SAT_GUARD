@@ -193,21 +193,36 @@
 // }
 
 
-import { useState } from 'react';
-import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import {
-  LayoutDashboard, Upload, MapPin, BarChart3, Eye, AlertTriangle,
-  Bell, Search, Menu, X, ChevronRight, User, LogOut, HelpCircle, Shield, Layers
-} from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuSeparator, DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
+import { Input } from '@/components/ui/input';
 import { useNotifications } from '@/hooks/useApi';
-import { getSession, clearSession } from '@/pages/Login';
+import { clearSession, getSession } from '@/pages/Login';
+import {
+  AlertTriangle,
+  BarChart3,
+  Bell,
+  ChevronRight,
+  Eye,
+  GitCompare,
+  HelpCircle,
+  Layers,
+  LayoutDashboard,
+  LogOut,
+  MapPin,
+  Menu,
+  Search,
+  Shield,
+  Upload,
+  User,
+  X
+} from 'lucide-react';
+import { useState } from 'react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 const navItems = [
   { title: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
@@ -218,6 +233,7 @@ const navItems = [
   { title: 'Monitoring Queue', path: '/monitoring', icon: Eye },
   { title: 'High Risk Areas', path: '/high-risk', icon: AlertTriangle },
   { title: 'Notifications', path: '/notifications', icon: Bell },
+  { title: 'Compare Sites', path: '/comparison', icon: GitCompare },
 ];
 
 const breadcrumbMap: Record<string, string> = {
@@ -229,6 +245,7 @@ const breadcrumbMap: Record<string, string> = {
   '/monitoring': 'Monitoring Queue',
   '/high-risk': 'High Risk Areas',
   '/notifications': 'Notifications',
+  '/comparison': 'Compare Sites',
 };
 
 export default function DashboardLayout() {
