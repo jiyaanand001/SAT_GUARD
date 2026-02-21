@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+🚨 Illegal Mining Detection System
 
-## Project info
+An AI-powered system designed to detect and monitor illegal mining activities using satellite imagery, computer vision, and machine learning techniques.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project aims to assist authorities and environmental agencies in identifying unauthorized mining operations and protecting natural resources.
 
-## How can I edit this code?
+📌 Features
 
-There are several ways of editing your application.
+🛰️ Satellite image analysis
 
-**Use Lovable**
+🤖 Machine Learning / Deep Learning-based detection
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+📍 Location-based monitoring
 
-Changes made via Lovable will be committed automatically to this repo.
+📊 Data visualization and reporting
 
-**Use your preferred IDE**
+⚡ Real-time or batch image processing
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Python
 
-Follow these steps:
+OpenCV
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+TensorFlow / PyTorch
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+NumPy & Pandas
 
-# Step 3: Install the necessary dependencies.
-npm i
+Matplotlib / Seaborn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+GIS / Satellite Imagery APIs
 
-**Edit a file directly in GitHub**
+📂 Project Structure
+Illegal-Mining-Detection/
+│
+├── data/                # Dataset (satellite images)
+├── models/              # Trained models
+├── src/                 # Source code
+│   ├── preprocessing.py
+│   ├── train.py
+│   ├── detect.py
+│
+├── results/             # Output results
+├── requirements.txt
+└── README.md
+🚀 Installation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Clone the repository
 
-**Use GitHub Codespaces**
+git clone https://github.com/your-username/illegal-mining-detection.git
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Navigate to project folder
 
-## What technologies are used for this project?
+cd illegal-mining-detection
 
-This project is built with:
+Install dependencies
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+pip install -r requirements.txt
+▶️ Usage
+Train the Model
+python src/train.py
+Run Detection
+python src/detect.py --image path_to_image
+📊 How It Works
 
-## How can I deploy this project?
+Collect satellite imagery data
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Preprocess and clean the dataset
 
-## Can I connect a custom domain to my Lovable project?
+Train ML/DL model to classify mining vs non-mining areas
 
-Yes, you can!
+Detect and highlight suspicious regions
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Generate reports or alerts
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🌍 Applications
+
+Environmental monitoring
+
+Government regulatory agencies
+
+Forest and land protection authorities
+
+Sustainable development initiatives
